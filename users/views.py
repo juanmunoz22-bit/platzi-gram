@@ -56,3 +56,7 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
+
+@login_required
+def update_profile(request):
+    return render(request, 'users/update.html')
