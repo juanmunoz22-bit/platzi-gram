@@ -68,4 +68,3 @@ class LoginView(auth_views.LoginView):
 
 class LogoutView(auth_views.LogoutView):
     template_name = 'users/logged_out.html'
-
